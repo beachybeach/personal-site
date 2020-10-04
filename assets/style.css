@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #05600d;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+/*HEADER STYLING*/
+
+header {
+    padding: 20px 35px;
+    background-color: #05600d;
+}
+
+header h1 {
+
+}
+
+header nav {
+    float: right;
+    margin: 7px 0;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li {
+    margin: 0 30px;
+    font-weight: lighter;
+    font-size: 22px;
+}
