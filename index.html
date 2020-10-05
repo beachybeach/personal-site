@@ -12,9 +12,6 @@
         <h1>
             Riley Beach
         </h1>
-        <h2>
-            Hello, my name is Riley Beach and I'm a 23 year old web developer from Anthem, Arizona.
-        </h2>
         <nav>
             <!--Unordered list element-->
             <ul>
@@ -25,7 +22,7 @@
                     <a href="#my-projects">My Projects</a>
                 </li>
                 <li>
-                    <a href="contact-me">Contact Me</a>
+                    <a href="#contact-me">Contact Me</a>
                 </li>
             </ul>
 
@@ -34,22 +31,50 @@
 
     <!--hero-->
     <section class="hero">
-        <div>
-            <img src="./assets/images/me.JPG">
+        <div class="hero-cta">
+            <h2>Riley Beach</h2>
+            <p>Hello, my name is Riley and I make websites!</p>
         </div>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. At iusto, rem autem sapiente quia velit cum labore expedita, dolorum doloremque vitae maiores facere. Rerum ipsa, fugit non tempora sit repellendus!
-        </p>
+    </section>
+
+    <!--About Me-->
+    <section id="about me" class="about-me">
+        <h2>About Me</h2>
+        <div class="my-bio">
+            <div class="bio-img">
+            <img src="./assets/images/me.JPG">
+            </div>
+            <p>
+                Pellentesque fermentum leo ac lacus tincidunt semper at sed augue. Sed quam lacus, vulputate non scelerisque et, vulputate nec risus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut dui arcu, malesuada eget nisi placerat, rhoncus congue diam. Cras dolor arcu, lacinia non lacinia ac, cursus et est. Nunc auctor id purus vel tincidunt. Curabitur in est suscipit, lacinia ante ac, venenatis nisi. Fusce consequat augue sed feugiat pharetra. Praesent cursus, urna nec tempus posuere, dui ligula porta velit, in facilisis nunc mi rhoncus odio. Praesent ultrices auctor quam et imperdiet. Nullam non dignissim dui, non aliquet nibh. Curabitur feugiat quam dui, vitae mollis lorem feugiat eget. 
+            </p>
+        </div>
     </section>
 
     <!--My Projects-->
-    <section class="my-projects">
+    <section id="my-projects">
+        <div class ="projects-grid-container">
+            <div class="projects-grid-item run-buddy">
+                Run Buddy
+            </div>
+
+            <div class="projects-grid-item plant-guide">
+                Plant Pocket Guide
+            </div>
+
+        </div>
+    </section>
+
+    <!--Contact Me-->
+    <section id="contact-me">
+        <h3>Riley Beach</h3><br/>
+        <h4>Phone: 623.432.2126</h4><br/>
+        <h4>Email:<a href="mailto:rsbeach97@gmail.com">rsbeach97@gmail.com</a></h4>
 
     </section>
 
 </body>
 
 <footer>
-    &copy; 2020 Riley Beach.
+    <h2>&copy; 2020 Riley Beach.</h2>
 </footer>
 </html>

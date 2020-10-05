@@ -14,6 +14,13 @@ body {
 header {
     padding: 20px 35px;
     background-color: #05600d;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-position: 80%;
 }
 
 header h1 {
@@ -22,6 +29,12 @@ header h1 {
     color: #87e48f;
     margin: 0;
     display: inline;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header a {
+    text-decoration: none;
+    color: #87e48f
 }
 
 header nav {
@@ -29,17 +42,113 @@ header nav {
     margin: 7px 0;
 }
 
-header nav ul li {
-    display: inline;
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
 }
 
-header nav ul li {
-    margin: 0 30px;
-    font-weight: lighter;
-    font-size: 22px;
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: bolder;
+    font-size: 1.55vw;
 }
 
-header a {
-    text-decoration: none;
-    color: #87e48f
+header nav ul li a:hover {
+    background: #87e48f;
+    color: #05600d;
+    border-radius: 15px;
+    text-shadow: none;
+}
+
+/* Hero Styling */
+.hero {
+    background-image: url("./images/floral.jpg");
+    background-size: cover;
+    background-position: 80%;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    
+}
+
+.hero-cta {
+    width: 100%;
+    text-align: right;
+    margin: 3.5%;
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.2;
+    float: left;
+}
+
+.hero-cta h2 {
+    font-style: bold;
+    font-size: 55px;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    float: left;
+}
+
+.hero-cta p {
+    font-style: bold;
+    font-size: 45px;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/*About Me*/
+
+.about-me {
+    width: 100%;
+    text-align: left;
+    background: #05600d;
+    display: flex;
+}
+
+.about-me h2 {
+    font-style: bold;
+    font-size: 35px;
+    color: #fff;
+}
+
+.my-bio {
+    display: flex;
+}
+
+.bio img {
+    flex: 1 12%;
+    margin-right: 20px;
+}
+
+.bio-img img {
+    width: 100%;
+    min-height: 300px;
+}
+
+.my-bio p {
+    color: #fff;
+}
+
+
+
+/* FOOTER STYLING */
+
+footer {
+    background: #05600d;
+    width: 100%; 
+    padding: 15px 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer h2 {
+    color: #87e48f;
+    font-size: 20px;
+    margin: 0;
 }
